@@ -2,7 +2,7 @@ import React, { Component } from 'react'  //we need two things here React and Co
 
 class Welcome extends Component {             //extend
   render() {                                  //return null or nothing
-    return <h1>Class Component</h1>
+    return <h1>Class Component - {this.props.name} </h1>
   }
 }
 

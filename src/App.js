@@ -19,7 +19,8 @@ class App extends Component {
         <Greet name="Clara">
         </Greet>
         <Greeting/>
-        <Welcome/>
+        <Welcome name="Bruce"/>
+        <Welcome name="Clara"/>
         <Hello/>
         <Hello2/>
       </div>
