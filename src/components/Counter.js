@@ -19,7 +19,7 @@ class Counter extends Component{
     )
   }
 
-  /*React Groups Multiple call to set state into a single call for better performance */
+  /*React Groups Multiple call to set state into a single update for better performance */
   incrementThree(){
     this.increment()
     this.increment()
