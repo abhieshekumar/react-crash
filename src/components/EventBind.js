@@ -11,9 +11,10 @@ export class eventBind extends Component {
   }
   
   clickHandler(){
-    this.setState({
+    /*this.setState({
       message: 'Good Bye'
-    })
+    })*/
+    console.log(this)
   }
 
   render() {
