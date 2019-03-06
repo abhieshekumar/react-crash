@@ -13,21 +13,7 @@ class App extends Component {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        {/* Let's concentrate on counter component only */}
-        <Counter/>
-        {/*<Greet name="Bruce">
-          <p>
-            This is child props
-          </p>
-        </Greet>
-        <Greet name="Clara">
-        </Greet>
-        <Greeting/>
-        <Welcome name="Bruce"/>
-        <Welcome name="Clara"/>
-        <Hello/>
-        <Message/>
-        <Hello2/>*/}
+        <Greet name="Diana" hero="Wonder Woman"/>
       </div>
     );
   }
