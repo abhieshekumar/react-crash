@@ -22,6 +22,7 @@ function NameList() {
       skill: 'Vue.js'
     }
   ]
+  /*Key prop are special - They are not accessible in CHILD component - Key prop is reserved - Do not use it to render any data - It helps react to handle UI updates efficiently */
   const personList = persons.map(person => <Person key={person.id} person={person} /> )
   return (
     <div>{ personList }</div>
