@@ -2,7 +2,8 @@ import React from 'react'
 
 /* Greet() defines a Functional Component*/
 /* Props - receives the property*/
-const Greet = ({name, hero}) => { /*DESTRUCTURING */
+const Greet = (props) => { /*DESTRUCTURING */
+  const { name , hero } = props
   return (
     <div> {/* Only one element is returned sowe wrap everything inside a Div tag */}
       <h1>Welcome to React - { name } - { hero }</h1>
