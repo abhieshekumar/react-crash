@@ -15,12 +15,16 @@ import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
 import Stylesheet from './components/Stylesheet'
 import Inline from './components/Inline'
+import './appStyles.css'
+import styles from './appStyles.module.css' //importing module CSS
+
 class App extends Component {
   render() {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <Inline/>
+        <h1 className='error'>Error</h1>
+        <h2 className={styles.success}>Success</h2>
       </div>
     );
   }

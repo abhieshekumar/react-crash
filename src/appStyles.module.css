@@ -1,0 +1,9 @@
+/*
+  appStyles.css is a regular stylesheet
+  appStyles.module.css is a CSS MODULE stylesheet. Must be suffixed with .module.css
+*/
+
+/*
+CSS Modules' classes are locally scoped by default*/
+
+.success{color: green}

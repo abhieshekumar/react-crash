@@ -1,6 +1,6 @@
 import React from 'react'
 
-/*In react inline CSS are camelCased version of style names */
+/*In react inline CSS are objects with key being camelCased version of style names */
 
 const heading = {
   fontSize: '72px',
