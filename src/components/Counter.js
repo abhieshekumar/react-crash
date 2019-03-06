@@ -9,9 +9,9 @@ class Counter extends Component{
     }
   }
 
-  /*Pass function as parameter is update of state depends on previous state */
+  /*Pass function as parameter if update of state depends on previous state */
   increment(){
-    this.setState((prevState, props) => ({
+    this.setState((prevState, props) => ({ /*Parameters to function prevSate and props */
       count: prevState.count+1
     }))
   }
