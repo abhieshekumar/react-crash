@@ -22,9 +22,25 @@ function NameList() {
       skill: 'Vue.js'
     }
   ]
-  const personList = persons.map(person => <Person person={person} /> )
+  /*
+  PROBLEM with index as KEY
+    have items with key,value pair as (0,1)(1,2)(2,3)
+    if you insert at beginning then that element gets the INDEX of    ZERO which is bad for react interpretation
+
+    ALSO this is a problem with SORTING
+
+    You may have index as key if :
+      - you do not have unique id
+      - list is static (no add/delete)
+      - list will never be reordered or filtered
+  */
+
+  const names = ['Bruce','Clark','Diana','Bruce']
+
+  /*Arrow function takes two value index and name which solves Key problem*/
+  const nameList = names.map((name,index) => <h2 key={index}>{name}</h2> )
   return (
-    <div>{ personList }</div>
+    <div>{ nameList }</div>
   )
 }
 
