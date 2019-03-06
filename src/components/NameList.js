@@ -22,8 +22,18 @@ function NameList() {
       skill: 'Vue.js'
     }
   ]
-  /*Key prop are special - They are not accessible in CHILD component - Key prop is reserved - Do not use it to render any 
-  data - It helps react to handle UI updates efficiently */
+  /*
+  PROBLEM with index as KEY
+    have items with key,value pair as (0,1)(1,2)(2,3)
+    if you insert at beginning then that element gets the INDEX of    ZERO which is bad for react interpretation
+
+    ALSO this is a problem with SORTING
+
+    You may have index as key if :
+      - you do not have unique id
+      - list is static (no add/delete)
+      - list will never be reordered or filtered
+  */
 
   const names = ['Bruce','Clark','Diana','Bruce']
 
