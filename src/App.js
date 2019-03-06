@@ -4,6 +4,7 @@ import Greet from './components/Greet'  /* You may omit the .js extension */
 import { Greeting } from './components/GreetNamed' // for the named functional conponent
 import Welcome from './components/Welcome'  //Class Component
 import Hello from './components/Hello' //JSX Version of component
+import Hello2 from './components/Hello2' //JSX Version of component
 
 class App extends Component {
   render() {
@@ -13,6 +14,8 @@ class App extends Component {
         <Greet/>
         <Greeting/>
         <Welcome/>
+        <Hello/>
+        <Hello2/>
       </div>
     );
   }
