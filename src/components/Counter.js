@@ -19,11 +19,18 @@ class Counter extends Component{
     )
   }
 
+  /*React Groups Multiple call to set state into a single call for better performance */
+  incrementThree(){
+    this.increment()
+    this.increment()
+    this.increment()
+  }
+
   render(){
     return(
       <div>
         <div>Count - { this.state.count }</div>
-        <button onClick={() => this.increment()}>Increment</button>
+        <button onClick={() => this.incrementThree()}>Increment</button>
       </div>
     )
   }
