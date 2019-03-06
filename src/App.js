@@ -5,13 +5,16 @@ import { Greeting } from './components/GreetNamed' // for the named functional c
 import Welcome from './components/Welcome'  //Class Component
 import Hello from './components/Hello' //JSX Version of component
 import Hello2 from './components/Hello2' //JSX Version of component
+import Message from './components/Message' //for state of component
 
 class App extends Component {
   render() {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <Greet name="Bruce">
+        {/* Let's concentrate on state of component only */}
+        <Message/>
+        {/*<Greet name="Bruce">
           <p>
             This is child props
           </p>
@@ -22,7 +25,7 @@ class App extends Component {
         <Welcome name="Bruce"/>
         <Welcome name="Clara"/>
         <Hello/>
-        <Hello2/>
+        <Hello2/>*/}
       </div>
     );
   }
