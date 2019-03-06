@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Greet from './components/Greet'  /* You may omit the .js extension */
+import { Greeting } from './components/GreetNamed' // for the named functional conponent
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Greet/>
+        <Greeting/>
       </div>
     );
   }
