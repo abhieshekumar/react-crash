@@ -9,14 +9,11 @@ class Counter extends Component{
     }
   }
 
+  /*Pass function as parameter is update of state depends on previous state */
   increment(){
-    this.setState({
-      count : this.state.count+1
-    },
-    () => {
-      console.log(this.state.count) //Async nature of setState
-      }
-    )
+    this.setState((prevState, props) => ({
+      count: prevState.count+1
+    }))
   }
 
   /*React Groups Multiple call to set state into a single update for better performance */
