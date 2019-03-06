@@ -11,7 +11,13 @@ class App extends Component {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <Greet name="Bruce" /> {/*To specify props for a component we specify them as attributes. Eg: name property*/}
+        <Greet name="Bruce">
+          <p>
+            This is child props
+          </p>
+        </Greet>
+        <Greet name="Clara">
+        </Greet>
         <Greeting/>
         <Welcome/>
         <Hello/>

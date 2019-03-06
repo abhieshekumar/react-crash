@@ -3,7 +3,12 @@ import React from 'react'
 /* Greet() defines a Functional Component*/
 /* Props - receives the property*/
 const Greet = (props) => {
-  return <h1>Welcome to React - { props.name }</h1>
+  return (
+    <div> {/* Only one element is returned sowe wrap everything inside a Div tag */}
+      <h1>Welcome to React - { props.name }</h1>
+      { props.children }
+    </div>
+    )
 }
 
 
