@@ -11,17 +11,16 @@ export class eventBind extends Component {
   }
   
   clickHandler(){
-    /*this.setState({
+    this.setState({
       message: 'Good Bye'
-    })*/
-    console.log(this)
+    })
   }
 
   render() {
     return (
       <div>
         <div>{ this.state.message }</div>
-        <button onClick = { this.clickHandler}>Click</button>
+        <button onClick = { this.clickHandler.bind(this)}>Click</button>
       </div>
     )
   }
