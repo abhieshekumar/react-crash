@@ -22,10 +22,15 @@ function NameList() {
       skill: 'Vue.js'
     }
   ]
-  /*Key prop are special - They are not accessible in CHILD component - Key prop is reserved - Do not use it to render any data - It helps react to handle UI updates efficiently */
-  const personList = persons.map(person => <Person key={person.id} person={person} /> )
+  /*Key prop are special - They are not accessible in CHILD component - Key prop is reserved - Do not use it to render any 
+  data - It helps react to handle UI updates efficiently */
+
+  const names = ['Bruce','Clark','Diana','Bruce']
+
+  /*Arrow function takes two value index and name which solves Key problem*/
+  const nameList = names.map((name,index) => <h2 key={index}>{name}</h2> )
   return (
-    <div>{ personList }</div>
+    <div>{ nameList }</div>
   )
 }
 
