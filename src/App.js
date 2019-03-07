@@ -25,13 +25,14 @@ import PureComponent from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 class App extends Component {
   render() {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <FocusInput/>
+        <FRParentInput/>
       </div>
     );
   }
