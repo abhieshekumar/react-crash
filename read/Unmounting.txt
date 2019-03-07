@@ -1,0 +1,3 @@
+componentWillUnmount()
+  - invoked immediately before component is unmounted and destroyed
+  - perform clean-up tasks as cancelling network requests, invalidating timers.
