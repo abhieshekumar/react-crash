@@ -1,0 +1,1 @@
+Render child into the DOM node that exists the outside the DOM hierarchy of the parent component
