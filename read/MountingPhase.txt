@@ -1,0 +1,25 @@
+In order of being invoked
+
+constructor (props)
+  - a special function that will get called whenever a new component is created
+  - Used for initializing state and binding event handler
+  - Do not cause side effects eg: HTTP request
+  - Call super(props)
+  - It is the only place where you are expected to directly overwrite this.state otherwise use setState()
+
+static getDerivedStateProps(props,state)
+  - React says it is rarely used
+  - used when the state of component depends on changes in props over time.
+  - it doesn't has access to this keyword as it is static
+  - do not cause side effects
+
+render()
+  - only required method in class component
+  - returns JSX
+  - do not change state or interact with DOM or make ajax calls
+  - it may contain other child component so lifecycle methods of child components are called right after parent's render()
+
+componentDidMount()
+  - called only once in whole lifecycle
+  - invoked immediately after a component and all its children components have been rendered to the DOM.
+  - you may interact with DOM or perform ajax calls

@@ -5,7 +5,7 @@ React provides built in methods that we can override at particular  stages in th
 LIFECYCLE METHODS for CLASS COMPONENETS
 
 Phases of Methods : 
-  |- Mounting - when an instance is being created and 
+  |- Mounting - when an instance is being created and inserted into dom
   |- Updating - when a component is being re-rendered as a result of changes to either its props or state
   |- Unmounting - when a component is being removed from the DOM
   |- Error Handling - when there is an error during rendering, in a lifecycle method, or in the constructor ofany child component
