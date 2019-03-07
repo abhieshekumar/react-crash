@@ -19,13 +19,14 @@ import './appStyles.css'
 import styles from './appStyles.module.css' //importing module CSS
 import Form from './components/Form'
 import LifecycleA from './components/LifecycleA'
+import FragmentDemo from './components/FragmentDemo';
 
 class App extends Component {
   render() {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <LifecycleA/>
+        <FragmentDemo/>
       </div>
     );
   }
