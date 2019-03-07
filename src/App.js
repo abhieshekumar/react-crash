@@ -27,13 +27,20 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 class App extends Component {
   render() {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <PortalDemo/>
+        <ErrorBoundary>
+          <Hero heroname="joker"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroname="Batman"/>
+        </ErrorBoundary>
       </div>
     );
   }
