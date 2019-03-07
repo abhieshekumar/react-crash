@@ -17,14 +17,14 @@ import Stylesheet from './components/Stylesheet'
 import Inline from './components/Inline'
 import './appStyles.css'
 import styles from './appStyles.module.css' //importing module CSS
+import Form from './components/Form'
 
 class App extends Component {
   render() {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <h1 className='error'>Error</h1>
-        <h2 className={styles.success}>Success</h2>
+        <Form/>
       </div>
     );
   }
