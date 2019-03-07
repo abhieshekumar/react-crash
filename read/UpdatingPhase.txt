@@ -1,0 +1,32 @@
+In order of execution
+
+static getDerivedStateFromProps(props, state)
+  - return NULL or object representing the updated state of the component
+  - called everytime component is re-rendered
+  - used to set the state
+  - do not cause side effects
+
+shouldComponentUpdate(nextProps,nextState)
+  - dictates if the component should re-render or not
+  - by default all class components re-render whenever the prop they receive or state changes
+  - this methods can prevent default behaviour by returning false
+  - avoid side effects
+  - calling setState method
+  - RARELY USED
+
+render()
+  - do not change state or interact with DOM
+
+getSnapshotBeforeUpdate(prevProps,prevState)
+  - called right before the changess from virtual DOM are to be reflected in the DOM
+  - RARELY USED
+  - used to capture some information from DOM. eg: maintain scroll position
+  - method returns null or a value.
+  Returned value is passed as a third parameter to the next method
+  - reads current DOM state
+
+componentDidUpdate(prevProps,prevState,snapshot)
+  - called after the render is finished in re-render cycle
+  - can be sure component and child component have re-rendered
+  - guaranteed to be called only once in re-render cycle
+  - can do side effects
