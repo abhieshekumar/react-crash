@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RegularComponent from './RegularComponent';
 import PureComp from './PureComp';
+import MemoComp from './MemoComp';
 
 /*The Regular Component does not implement the shouldComponentUpdate method. It always return true by default*/
 
@@ -53,8 +54,9 @@ class ParentComp extends Component {
     return (
       <div>
         Parent Component
-        <RegularComponent name={this.state.name}></RegularComponent>
-        <PureComp name={this.state.name}></PureComp>
+        <MemoComp name={this.state.name}/>
+        {/*<RegularComponent name={this.state.name}></RegularComponent>
+        <PureComp name={this.state.name}></PureComp>*/}
       </div>
     )
   }
