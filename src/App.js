@@ -17,14 +17,21 @@ import Stylesheet from './components/Stylesheet'
 import Inline from './components/Inline'
 import './appStyles.css'
 import styles from './appStyles.module.css' //importing module CSS
+import Form from './components/Form'
+import LifecycleA from './components/LifecycleA'
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
+import PureComponent from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
 
 class App extends Component {
   render() {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <h1 className='error'>Error</h1>
-        <h2 className={styles.success}>Success</h2>
+        <FocusInput/>
       </div>
     );
   }

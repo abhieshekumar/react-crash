@@ -1,0 +1,1 @@
+What Pure Component is to Class Based Components, memo is that to Functional Components

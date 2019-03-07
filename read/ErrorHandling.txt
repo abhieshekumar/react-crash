@@ -1,0 +1,4 @@
+static getDerivedStateFromError(error)
+componentDidCatch(error,info)
+
+These methods are called if there is an error either during rendering, in a lifecycle method, or in the constructor of any child component

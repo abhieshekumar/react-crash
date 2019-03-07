@@ -1,0 +1,3 @@
+Make it possible to access DOM nodes directly within React
+
+Let's focus on username input
