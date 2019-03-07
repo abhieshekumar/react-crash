@@ -3,6 +3,7 @@ import React from 'react'
 /*Breaking out */
 import ReactDOM from 'react-dom'
 
+/*HELP to Break-out of CSS of Parent */
 function PortalDemo() {
   return ReactDOM.createPortal(
       <h1>Portals Demo</h1>,
