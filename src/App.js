@@ -20,6 +20,7 @@ import styles from './appStyles.module.css' //importing module CSS
 import Form from './components/Form'
 import LifecycleA from './components/LifecycleA'
 import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         <FragmentDemo/>
+        <Table/>
       </div>
     );
   }
