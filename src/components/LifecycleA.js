@@ -18,8 +18,28 @@ class LifecycleA extends Component {
     return null
   }
   
+  shouldComponentUpdate(){
+    console.log('LifecycleA shouldComponentUpdate')
+    return true
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState){
+    console.log('LifecycleA getSnapshoBeforeUpdate')
+    return null
+  }
+
+  componentDidUpdate(){
+    console.log('LifecycleA componentDidUpdate')
+  }
+
   componentDidMount() {
     console.log('LifecycleA Mount')
+  }
+
+  changeState = () => {
+    this.setState({
+      name: 'Evaluation'
+    })
   }
 
   render() {
@@ -27,6 +47,7 @@ class LifecycleA extends Component {
     return (
       <div>
         LifeCycleA - See console for order of execution
+        <button onClick={this.changeState}>Change State</button>
         <LifecycleB/>
       </div>
     )
