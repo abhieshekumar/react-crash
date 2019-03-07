@@ -24,6 +24,12 @@ Shallow Comparison
     a SC c is TRUE
 */
 
+/*
+PureComponents give a perfomance improvement. 
+Be careful with mutation of objects. Always return a new objectm reflecting new State as it does Shallow Comparison
+
+*/
+
 class ParentComp extends Component {
 
   constructor(props) {
