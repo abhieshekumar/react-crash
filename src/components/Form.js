@@ -37,6 +37,9 @@ class Form extends Component {
   }
 
   render() {
+
+    const {username, comments, topic }= this.state
+
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
@@ -45,12 +48,12 @@ class Form extends Component {
               Assign component state to element value
               Define a onChange event Handler to update the state
            */}
-          <input type='text' value={this.state.username} onChange={this.handlerUsernameChange}/>
+          <input type='text' value={username} onChange={this.handlerUsernameChange}/>
           <br></br>
-           <textarea value={this.state.comments} onChange={this.handleCommentChange}></textarea>
+           <textarea value={comments} onChange={this.handleCommentChange}></textarea>
            <div>
              <label>Topic</label>
-             <select value={this.state.topic} onChange={this.handleTopicChange}>
+             <select value={topic} onChange={this.handleTopicChange}>
               <option value="react">React</option>
               <option value="angular">Angular</option>
               <option value="vue">Vue</option>
