@@ -10,6 +10,7 @@ export default function Columns() {
       title:'Lord of Rings'
     }
   ]
+  /*Fragments if shorthanded do not allow to pass the key attribute */
   return (
     <>
       <td>Name</td>
