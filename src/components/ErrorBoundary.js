@@ -17,6 +17,12 @@ class ErrorBoundary extends Component {
     }
   }
 
+  componentDidCatch(error,info){
+    /* Information related to the error in info - used to log the error */
+    console.log(info)
+    console.log(error)
+  }
+
   render() {
     if(this.state.hasError){
       return <h1>Something went wrong</h1>
