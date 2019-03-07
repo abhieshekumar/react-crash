@@ -13,6 +13,10 @@ class RefsDemo extends Component {
     console.log(this.inputRef)
   }
 
+  clickHandler = () => {
+    console.log(this.inputRef.current.value)
+  }
+
   render() {
     return (
       <div>
@@ -23,6 +27,7 @@ class RefsDemo extends Component {
           Step 3 Call focus method
         */}
         <input type="text" ref={this.inputRef}/>
+        <button onClick={this.clickHandler}>Click</button>
       </div>
     )
   }
