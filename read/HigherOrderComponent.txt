@@ -4,3 +4,4 @@ It adds additional data and functionality to the original component
 
 const IronMan = withSuit(TonyStark)
 
+HOC help to share code for components
