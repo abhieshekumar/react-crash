@@ -38,7 +38,7 @@ class App extends Component {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <ClickCounter/>
+        <ClickCounter name="Name"/>
         <HoverCounter/>
       </div>
     );

@@ -20,7 +20,8 @@ const updatedComponent = (OriginalComponent) => {
     }
 
     render(){
-      return <OriginalComponent count={this.state.count} incrementCount={this.incrementCount}/>
+      console.log(this.props.name) /*Props are passed to the HOC not the component */
+      return <OriginalComponent count={this.state.count} incrementCount={this.incrementCount} {... this.props}/> //Spread Operator - pass down the rest of the props
     }
   }
   return NewComponent
