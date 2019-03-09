@@ -34,16 +34,24 @@ import HoverCounter from './components/HoverCounter';
 import ClickCounter2 from './components/ClickCounter2';
 import HoverCounter2 from './components/HoverCounter2';
 import User from './components/User';
+import Counter2 from './components/Counter2';
 
 class App extends Component {
   render() {
     /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <ClickCounter2/>
+        {/*<ClickCounter2/>
         <HoverCounter2/>
         <User render={(isLoggedIn)=> isLoggedIn?'MyName':'Guest'}/>
-      </div>
+      </div>*/}
+        <Counter2 render={(count,incrementCount) => (
+          <ClickCounter2 count={count} incrementCount={incrementCount}/>
+        )}/>
+        <Counter2 render={(count,incrementCount) => (
+          <HoverCounter2 count={count} incrementCount={incrementCount}/>
+        )}/>
+      </div>  
     );
   }
 }
