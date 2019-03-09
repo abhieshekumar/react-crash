@@ -42,7 +42,7 @@ class App extends Component {
       <div className="App">
         <ClickCounter2/>
         <HoverCounter2/>
-        <User/>
+        <User name="My Name"/>
       </div>
     );
   }
