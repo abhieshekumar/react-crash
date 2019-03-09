@@ -1,0 +1,16 @@
+AppComp-----|---A
+            |---B---D
+            |---C---E---F
+
+Nesting in components
+
+Requirement : Component A,D and F are to display the username which is stored in AppComp
+
+For A - simple passdown to A
+For B - pass prop to B and then to D
+For F - pass prop to C and E and finally to F
+
+Here prop isn't needed by B, C and E but yet passed down ? 
+
+Context provides a way to pass data throught the component tree without having to pass down props manually a every level
+
