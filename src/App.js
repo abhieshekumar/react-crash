@@ -35,22 +35,20 @@ import ClickCounter2 from './components/ClickCounter2';
 import HoverCounter2 from './components/HoverCounter2';
 import User from './components/User';
 import Counter2 from './components/Counter2';
+import ComponentC from './components/ComponentC'
+/**
+ * Steps to create the context
+ * 
+ * Create the context
+ * Proveide a context value
+ * Consume the context value
+ */
 
 class App extends Component {
   render() {
-    /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        {/*<ClickCounter2/>
-        <HoverCounter2/>
-        <User render={(isLoggedIn)=> isLoggedIn?'MyName':'Guest'}/>
-      </div>*/}
-        <Counter2 render={(count,incrementCount) => (
-          <ClickCounter2 count={count} incrementCount={incrementCount}/>
-        )}/>
-        <Counter2 render={(count,incrementCount) => (
-          <HoverCounter2 count={count} incrementCount={incrementCount}/>
-        )}/>
+        <ComponentC/>
       </div>  
     );
   }
