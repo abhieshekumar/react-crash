@@ -42,7 +42,7 @@ class App extends Component {
       <div className="App">
         <ClickCounter2/>
         <HoverCounter2/>
-        <User name={(isLoggedIn)=> isLoggedIn?'MyName':'Guest'}/>
+        <User render={(isLoggedIn)=> isLoggedIn?'MyName':'Guest'}/>
       </div>
     );
   }
