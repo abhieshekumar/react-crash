@@ -57,9 +57,9 @@ class App extends Component {
           
           The value of 'value' can be used by component C or component nested
         */}
-        {/*<UserProvider value="Name">*/}
+        <UserProvider value="Name">
           <ComponentC/>
-      {/*</UserProvider>*/}
+        </UserProvider>
       </div>  
     );
   }
