@@ -36,6 +36,7 @@ import HoverCounter2 from './components/HoverCounter2';
 import User from './components/User';
 import Counter2 from './components/Counter2';
 import ComponentC from './components/ComponentC'
+import { UserProvider } from './components/userContext';
 /**
  * Steps to create the context
  * 
@@ -48,7 +49,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ComponentC/>
+        {/*STEP 2 : 
+        
+          Only decendant can consume it. 
+          
+          Provider component is responsible to provide value to all the decendant components.  use "value" attribute .
+          
+          The value of 'value' can be used by component C or component nested
+        */}
+        <UserProvider value="Name">
+          <ComponentC/>
+        </UserProvider>
       </div>  
     );
   }
