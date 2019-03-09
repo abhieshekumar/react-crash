@@ -25,14 +25,42 @@ import PureComponent from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverCounter2 from './components/HoverCounter2';
+import User from './components/User';
+import Counter2 from './components/Counter2';
+import ComponentC from './components/ComponentC'
+import { UserProvider } from './components/userContext';
+/**
+ * Steps to create the context
+ * 
+ * Create the context
+ * Proveide a context value
+ * Consume the context value
+ */
 
 class App extends Component {
   render() {
-    /* If there is no content between the tag <Greet></Greet> we may change it to a self closing tag */
     return (
       <div className="App">
-        <FocusInput/>
-      </div>
+        {/*STEP 2 : 
+        
+          Only decendant can consume it. 
+          
+          Provider component is responsible to provide value to all the decendant components.  use "value" attribute .
+          
+          The value of 'value' can be used by component C or component nested
+        */}
+        <UserProvider value="Name">
+          <ComponentC/>
+        </UserProvider>
+      </div>  
     );
   }
 }
