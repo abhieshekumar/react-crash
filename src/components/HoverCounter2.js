@@ -19,7 +19,7 @@ class HoverCounter2 extends Component {
   render() {
     return (
       <div>
-        <h1 onMouseOver={this.incrementCount}>Hovered {this.count} times</h1>
+        <h1 onMouseOver={this.incrementCount}>Hovered {this.state.count} times</h1>
       </div>
     )
   }
