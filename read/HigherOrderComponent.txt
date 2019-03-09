@@ -1,0 +1,6 @@
+HOC is a pattern where function takes a component and returns a component
+
+It adds additional data and functionality to the original component
+
+const IronMan = withSuit(TonyStark)
+
